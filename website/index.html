@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Octogen-2</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="form">
+        <div class="price-form">
+            <label for="price-form">Pricing Selection (Required):</label> 
+            <form action="" method="get" class="price-form variables-form">
+                <select name="price" id="price" required>
+                    <option value="">Select price Versions</option>
+                    <option value="version-1">Version-1</option>
+                    <option value="version-2">Version-2</option>
+                </select>
+                <div class="kilogram-form"><bk></bk>
+                <select name="kg" id="kg-size" required>
+                    <option value="">Select Size</option>
+                    <option value="Big">B - Big</option>
+                    <option value="Medium">M - Medium</option>
+                    <option value="Small">S - Small</option>
+                    <option value="UnderSmall">US - Under Small</option>
+                    <option value="Reject">RE - Reject</option>
+                    </div>
+                </select>
+                
+                <div class="variables-container">
+                    <label for="variables-container">Variables Selection (Required):</label>
+                    <input type="number" name="kgVariables" min="0.05" step="0.05" placeholder="Kg" class="kgVariables" required><bk></bk>
+                    <input type="checkbox" id="isAddOnly" name="Add Only"><bk></bk>
+                    <label for="isAddOnly">Add Only(Optional)</label>
+                </div>
+                <button type="submit" class="variables-form price-form">Add</button>
+            </form>
+        </div>
+        </div>
+    </div>
+    <p>preview: (this is for testing purposes)</p>
+    <p class="preview1"></p>
+    <div class="table-preview">
+        <table id="previewTable" title="preview">
+            <h2>preview</h2>
+            <tr>
+                <th>Size</th>
+                <th>Kg</th>
+                <th>Total</th>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td>2.2</td>
+                <td>0.00</td>
+            </tr>
+            <tr>
+                <td>M</td>
+                <td>1.2</td>
+                <td>0.00</td>
+            </tr>
+            <tr>
+                <td>S</td>
+                <td>0.6</td>
+                <td>0.00</td>
+            </tr>
+            <tr>
+                <td>US</td>
+                <td>0.2</td>
+                <td>0.00</td>
+            </tr>
+            <tr>
+                <td>RE</td>
+                <td>N/A</td>
+                <td>0.00</td>
+            </tr>
+        </table>
+    </div>
+    <script type="text/javascript" src="app.js"></script>
+    <script src="config.json"></script>
+  </body>
+</html>
